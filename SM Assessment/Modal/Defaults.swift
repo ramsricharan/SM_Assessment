@@ -25,6 +25,7 @@ struct TabBarTitles {
 
 // TableView Cell ID
 let TABLE_CELL_ID = "MyCellID"
+let GRID_CELL_ID = "CollecitonViewID"
 
 
 // Alerts
@@ -37,3 +38,11 @@ let CLEAR_BUTTON = "Clear"
 
 // Placeholders
 let TAP_COUNT = "Tap count: "
+
+
+
+// Services
+let ACCESS_TOKEN = "Client-ID 2eda0e1fb83233d93deefe3bc9746a34a9a91d5542899c7ddf6deedfc45e92d2"
+let BASE_URL = "https://api.unsplash.com/"
+let SEARCH_ENDPOINT = "search/collections"
+let SEARCH_PARAMETERS = "?page=1&query="

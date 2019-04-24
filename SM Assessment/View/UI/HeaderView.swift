@@ -1,0 +1,47 @@
+//
+//  HeaderView.swift
+//  SM Assessment
+//
+//  Created by Ram Sri Charan on 4/23/19.
+//  Copyright © 2019 Ram Sri Charan. All rights reserved.
+//
+
+import UIKit
+
+class HeaderView: UIView {
+
+    ////////////////////////////////////////////////////////////
+    ////////////////////    Initialization  ////////////////////
+    ////////////////////////////////////////////////////////////
+    override init(frame: CGRect){
+        super.init(frame: frame)
+        setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    ////////////////////////////////////////////////////////////
+    ////////////////    Getter / Setter Methods  ///////////////
+    ////////////////////////////////////////////////////////////
+    
+    
+    
+    ////////////////////////////////////////////////////////////
+    ////////////////////    View Components  ///////////////////
+    ////////////////////////////////////////////////////////////
+    
+    // BaseView
+    private let baseView : UIView = {
+        let view = UIView()
+        
+        return view
+    }()
+    
+    private func setup() {
+        
+    }
+
+}

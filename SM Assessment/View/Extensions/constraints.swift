@@ -17,10 +17,6 @@ extension UIView {
         childView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         childView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     
-//        childView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-//        childView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-//        childView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
-//        childView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
     }
     
     func addSubviewToEntireView(childView : UIView, paddingTop : CGFloat, paddingBottom : CGFloat, paddingLeft : CGFloat, paddingRight : CGFloat) {

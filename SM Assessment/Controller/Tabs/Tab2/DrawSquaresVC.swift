@@ -54,6 +54,7 @@ class DrawSquaresVC: UIViewController {
             showAlert(AlertTitle: OUT_OF_SPACE_TITLE, Message: OUT_OF_SPACE_MESSAGE +  "\(drawnSquare.count) squares.")
             return
         }
+        stampTheBox(square: square, number: drawnSquare.count+1)
         self.baseContainerView.addSubview(square)
         drawnSquare.append(square)
         availableSlots.append(square)
@@ -170,6 +171,21 @@ class DrawSquaresVC: UIViewController {
         let square = UIView(frame: CGRect(x: center.x - sideOffset, y: center.y - sideOffset, width: squareSide, height: squareSide))
         square.backgroundColor = UIColor.red
         return square
+    }
+    
+    private func stampTheBox(square : UIView, number : Int) {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "\(number)"
+        label.adjustsFontSizeToFitWidth = true
+        label.textAlignment = .center
+        label.backgroundColor = .lightGray
+        
+        square.addSubview(label)
+        label.heightAnchor.constraint(equalToConstant: squareSide/2).isActive = true
+        label.widthAnchor.constraint(equalTo: label.heightAnchor).isActive = true
+        label.centerYAnchor.constraint(equalTo: square.centerYAnchor).isActive = true
+        label.centerXAnchor.constraint(equalTo: square.centerXAnchor).isActive = true
     }
 
 }
