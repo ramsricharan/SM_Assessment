@@ -11,6 +11,7 @@ import UIKit
 
 class photoGridViews {
     
+    
     private var currentViewController : UIViewController!
     private var rootView : UIView!
     
@@ -22,6 +23,7 @@ class photoGridViews {
         self.currentViewController = ViewController
         self.rootView = ViewController.view
     }
+    
     
     
     ////////////////////////////////////////////////////////////
@@ -39,12 +41,10 @@ class photoGridViews {
     ////////////////////    UI Components  /////////////////////
     ////////////////////////////////////////////////////////////
     
-    // Title label
-    private let titleLabel : UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textAlignment = .center
-        label.text = TabBarTitles.TAB3.PAGE_HEADER
+    // Title View
+    private lazy var titleLabel : headerView = {
+        let label = headerView()
+        label.tabTitle = TabBarTitles.TAB3.PAGE_HEADER
         return label
     }()
     

@@ -13,7 +13,9 @@ class RootTabViewController : UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.yellow
+        // Customize Tab Bar
+        view.backgroundColor = UIColor.yellowBackground
+        self.tabBar.tintColor = UIColor.pinkTint
         
         let allTabs = getTabs()
         viewControllers = allTabs

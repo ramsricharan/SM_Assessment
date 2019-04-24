@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HeaderView: UIView {
+class headerView: UIView {
 
     ////////////////////////////////////////////////////////////
     ////////////////////    Initialization  ////////////////////
@@ -24,24 +24,33 @@ class HeaderView: UIView {
     }
     
     ////////////////////////////////////////////////////////////
-    ////////////////    Getter / Setter Methods  ///////////////
+    ////////////////////    Getter Setter Methods  /////////////
     ////////////////////////////////////////////////////////////
     
-    
+    var tabTitle : String = "New Tab" {
+        didSet {
+            titleLabel.text = self.tabTitle
+        }
+    }
     
     ////////////////////////////////////////////////////////////
     ////////////////////    View Components  ///////////////////
     ////////////////////////////////////////////////////////////
     
-    // BaseView
-    private let baseView : UIView = {
-        let view = UIView()
-        
-        return view
+    // Title label
+    private let titleLabel : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.textColor = UIColor.pinkTint
+        label.text = TabBarTitles.TAB3.PAGE_HEADER
+        return label
     }()
     
     private func setup() {
-        
+        translatesAutoresizingMaskIntoConstraints = false
+        addSubviewToEntireView(childView: titleLabel)
     }
 
 }

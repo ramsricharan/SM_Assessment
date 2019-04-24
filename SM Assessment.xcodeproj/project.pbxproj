@@ -10,11 +10,12 @@
 		35DEF8B8226E66CD006F449F /* squareDrawViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEF8B7226E66CD006F449F /* squareDrawViews.swift */; };
 		35DEF8BF226F7323006F449F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEF8BE226F7323006F449F /* Utilities.swift */; };
 		35DEF8C1226FA4EF006F449F /* photoGridViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEF8C0226FA4EF006F449F /* photoGridViews.swift */; };
-		35DEF8C4226FA854006F449F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEF8C3226FA854006F449F /* HeaderView.swift */; };
+		35DEF8C4226FA854006F449F /* headerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEF8C3226FA854006F449F /* headerView.swift */; };
 		35DEF8C6226FC13D006F449F /* photocell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEF8C5226FC13D006F449F /* photocell.swift */; };
 		35DEF8CB2270037E006F449F /* GetWebImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEF8CA2270037E006F449F /* GetWebImages.swift */; };
 		35DEF8CD22702B78006F449F /* WebImagesModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEF8CC22702B78006F449F /* WebImagesModal.swift */; };
 		35DEF8D12270C07E006F449F /* photoModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEF8D02270C07E006F449F /* photoModal.swift */; };
+		35DEF8D32270DA5E006F449F /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEF8D22270DA5D006F449F /* colors.swift */; };
 		35FD00D7226E2AA700500272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD00D6226E2AA700500272 /* AppDelegate.swift */; };
 		35FD00D9226E2AA700500272 /* RootTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD00D8226E2AA700500272 /* RootTabViewController.swift */; };
 		35FD00DE226E2AA900500272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FD00DD226E2AA900500272 /* Assets.xcassets */; };
@@ -31,11 +32,12 @@
 		35DEF8B7226E66CD006F449F /* squareDrawViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = squareDrawViews.swift; sourceTree = "<group>"; };
 		35DEF8BE226F7323006F449F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		35DEF8C0226FA4EF006F449F /* photoGridViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoGridViews.swift; sourceTree = "<group>"; };
-		35DEF8C3226FA854006F449F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		35DEF8C3226FA854006F449F /* headerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headerView.swift; sourceTree = "<group>"; };
 		35DEF8C5226FC13D006F449F /* photocell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photocell.swift; sourceTree = "<group>"; };
 		35DEF8CA2270037E006F449F /* GetWebImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWebImages.swift; sourceTree = "<group>"; };
 		35DEF8CC22702B78006F449F /* WebImagesModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImagesModal.swift; sourceTree = "<group>"; };
 		35DEF8D02270C07E006F449F /* photoModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoModal.swift; sourceTree = "<group>"; };
+		35DEF8D22270DA5D006F449F /* colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
 		35FD00D3226E2AA700500272 /* SM Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SM Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FD00D6226E2AA700500272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FD00D8226E2AA700500272 /* RootTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				35DEF8D02270C07E006F449F /* photoModal.swift */,
-				35DEF8C3226FA854006F449F /* HeaderView.swift */,
+				35DEF8C3226FA854006F449F /* headerView.swift */,
 				35DEF8C5226FC13D006F449F /* photocell.swift */,
 			);
 			path = UI;
@@ -177,6 +179,7 @@
 		35FD00F6226E37BF00500272 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				35DEF8D22270DA5D006F449F /* colors.swift */,
 				35FD00F7226E37D300500272 /* constraints.swift */,
 				35DEF8BE226F7323006F449F /* Utilities.swift */,
 			);
@@ -259,6 +262,7 @@
 				35DEF8C6226FC13D006F449F /* photocell.swift in Sources */,
 				35FD00F1226E2F3000500272 /* InstaSelfiesVC.swift in Sources */,
 				35DEF8BF226F7323006F449F /* Utilities.swift in Sources */,
+				35DEF8D32270DA5E006F449F /* colors.swift in Sources */,
 				35FD00F3226E302900500272 /* Defaults.swift in Sources */,
 				35FD00ED226E2D4D00500272 /* FizzBuzzVC.swift in Sources */,
 				35DEF8D12270C07E006F449F /* photoModal.swift in Sources */,
@@ -268,7 +272,7 @@
 				35FD00EF226E2F1200500272 /* DrawSquaresVC.swift in Sources */,
 				35FD00D7226E2AA700500272 /* AppDelegate.swift in Sources */,
 				35FD00FA226E4C8800500272 /* FizzBuzzModal.swift in Sources */,
-				35DEF8C4226FA854006F449F /* HeaderView.swift in Sources */,
+				35DEF8C4226FA854006F449F /* headerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

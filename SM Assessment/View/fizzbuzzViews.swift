@@ -41,14 +41,13 @@ class fizzBuzzViews {
     ////////////////////////////////////////////////////////////
     
     // Title View
-    private lazy var TitleLabel : UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textAlignment = .center
-        label.text = TabBarTitles.TAB1.PAGE_HEADER
+    private lazy var TitleLabel : headerView = {
+        let label = headerView()
+        label.tabTitle = TabBarTitles.TAB1.PAGE_HEADER
         return label
     }()
     
+
     // TableView
     private lazy var ContentTableView : UITableView = {
         let tableView = UITableView()

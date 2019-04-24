@@ -49,12 +49,10 @@ class squareDrawViews {
     ////////////////////    UI Components   ////////////////////
     ////////////////////////////////////////////////////////////
     
-    // Title label
-    private let titleLabel : UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = TabBarTitles.TAB2.PAGE_HEADER
-        label.textAlignment = .center
+    // Title View
+    private lazy var titleLabel : headerView = {
+        let label = headerView()
+        label.tabTitle = TabBarTitles.TAB2.PAGE_HEADER
         return label
     }()
     
