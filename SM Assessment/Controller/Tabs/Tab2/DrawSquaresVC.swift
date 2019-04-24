@@ -147,8 +147,8 @@ class DrawSquaresVC: UIViewController {
     // Check if the new square is out of container or intersects with any other drawn squares
     func isOverlapping(newSquare : UIView) -> Bool {
         
-        print("==== Checking for overlaps =====")
-        print("Current newSquare frame \(newSquare.frame)")
+//        print("==== Checking for overlaps =====")
+//        print("Current newSquare frame \(newSquare.frame)")
 
         // Check if it is out of container
         if(!self.baseContainerView.bounds.contains(newSquare.frame)) {
@@ -158,7 +158,7 @@ class DrawSquaresVC: UIViewController {
         
         for drawn in drawnSquare {
             if(drawn.frame.intersects(newSquare.frame)) {
-                print(" ---- Drawn frame \n \(drawn.frame) \nintersects \n newSquare frame : \(newSquare.frame) ----")
+//                print(" ---- Drawn frame \n \(drawn.frame) \nintersects \n newSquare frame : \(newSquare.frame) ----")
                 return true
             }
         }
@@ -169,7 +169,7 @@ class DrawSquaresVC: UIViewController {
     private func makeSquareWith(center : CGPoint) -> UIView {
         let sideOffset : CGFloat = squareSide/2
         let square = UIView(frame: CGRect(x: center.x - sideOffset, y: center.y - sideOffset, width: squareSide, height: squareSide))
-        square.backgroundColor = UIColor.red
+        square.backgroundColor = UIColor.pinkTint
         return square
     }
     
@@ -177,9 +177,10 @@ class DrawSquaresVC: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "\(number)"
+        label.textColor = UIColor.white
         label.adjustsFontSizeToFitWidth = true
         label.textAlignment = .center
-        label.backgroundColor = .lightGray
+        label.backgroundColor = .clear
         
         square.addSubview(label)
         label.heightAnchor.constraint(equalToConstant: squareSide/2).isActive = true
