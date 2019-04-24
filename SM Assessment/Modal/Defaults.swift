@@ -18,8 +18,8 @@ struct TabBarTitles {
         static let PAGE_HEADER = "Tap the screen to draw square"
     }
     struct TAB3 {
-        static let BAR_ITEM = "Insta Selfie"
-        static let PAGE_HEADER = "Insta Selfie"
+        static let BAR_ITEM = "Car Pictures"
+        static let PAGE_HEADER = "Photo Gallery"
     }
 }
 
